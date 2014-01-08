@@ -31,6 +31,7 @@ package aurelienribon.tweenengine;
 public interface TweenCallback {
 	public static final int BEGIN = 0x01;
 	public static final int START = 0x02;
+	public static final int STEP = 0x03;
 	public static final int END = 0x04;
 	public static final int COMPLETE = 0x08;
 	public static final int BACK_BEGIN = 0x10;

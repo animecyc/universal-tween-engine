@@ -321,6 +321,8 @@ public final class Timeline extends BaseTween<Timeline> {
 			if (delta >= 0) for (int i=0, n=children.size(); i<n; i++) children.get(i).update(dt);
 			else for (int i=children.size()-1; i>=0; i--) children.get(i).update(dt);
 		}
+
+		callCallback(TweenCallback.STEP);
 	}
 
 	// -------------------------------------------------------------------------

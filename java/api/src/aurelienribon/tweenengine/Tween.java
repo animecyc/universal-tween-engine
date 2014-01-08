@@ -873,6 +873,8 @@ public final class Tween extends BaseTween<Tween> {
 		}
 
 		accessor.setValues(target, type, accessorBuffer);
+
+		callCallback(TweenCallback.STEP);
 	}
 
 	// -------------------------------------------------------------------------
